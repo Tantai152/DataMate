@@ -1,0 +1,272 @@
+{
+  "business_dir": "/content/DATASET/public_test/data/dev_010",
+  "db_path": "db_public/dev_010.db",
+  "tables": {
+    "chi_tiet_don": {
+      "rows": 43935,
+      "columns": [
+        "ma_bill",
+        "cong",
+        "ck",
+        "soluong",
+        "ma_h_hoa",
+        "sl_quy_doi",
+        "no",
+        "don_gia_d",
+        "dvt"
+      ],
+      "kinds": {
+        "ma_bill": "text",
+        "cong": "number",
+        "ck": "number",
+        "soluong": "number",
+        "ma_h_hoa": "text",
+        "sl_quy_doi": "number",
+        "no": "number",
+        "don_gia_d": "number",
+        "dvt": "text"
+      },
+      "sources": [
+        "chi_tiet_don.csv[chi_tiet_don]"
+      ],
+      "rows_in": 45251,
+      "removed_junk": 0,
+      "removed_header_echo": 226,
+      "removed_duplicate": 1090,
+      "filled_blanks": 0,
+      "group_key": "ma_bill",
+      "filled_merged_key": 0
+    },
+    "don_hang": {
+      "rows": 25191,
+      "columns": [
+        "kenh_dat",
+        "thanh_tien",
+        "so_ct",
+        "con_no",
+        "date",
+        "phuong_thuc_tt",
+        "tien_giam",
+        "phi_van_chuyen",
+        "khach_tra",
+        "ma_the",
+        "xu_ly"
+      ],
+      "kinds": {
+        "kenh_dat": "text",
+        "thanh_tien": "number",
+        "so_ct": "text",
+        "con_no": "number",
+        "date": "date",
+        "phuong_thuc_tt": "text",
+        "tien_giam": "number",
+        "phi_van_chuyen": "number",
+        "khach_tra": "number",
+        "ma_the": "text",
+        "xu_ly": "text"
+      },
+      "sources": [
+        "don_hang.csv[don_hang]"
+      ],
+      "rows_in": 25702,
+      "removed_junk": 511,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "khach_hang": {
+      "rows": 260,
+      "columns": [
+        "nguoi_tao",
+        "khach_le_si",
+        "loai_khach",
+        "loai_hinh_khach",
+        "ma_khach",
+        "tong_diem",
+        "trang_thai",
+        "phone"
+      ],
+      "kinds": {
+        "nguoi_tao": "text",
+        "khach_le_si": "text",
+        "loai_khach": "text",
+        "loai_hinh_khach": "text",
+        "ma_khach": "text",
+        "tong_diem": "number",
+        "trang_thai": "text",
+        "phone": "text"
+      },
+      "sources": [
+        "khach_hang.csv[khach_hang]"
+      ],
+      "rows_in": 260,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "san_pham": {
+      "rows": 60,
+      "columns": [
+        "loai_hang_hoa",
+        "don_vi_tinh",
+        "nhom_hang",
+        "ma_vach_ean",
+        "ten_hang",
+        "gia_ban",
+        "ma_vach",
+        "duoc_ban_truc_tiep"
+      ],
+      "kinds": {
+        "loai_hang_hoa": "text",
+        "don_vi_tinh": "text",
+        "nhom_hang": "text",
+        "ma_vach_ean": "text",
+        "ten_hang": "text",
+        "gia_ban": "number",
+        "ma_vach": "text",
+        "duoc_ban_truc_tiep": "number"
+      },
+      "sources": [
+        "san_pham.csv[san_pham]"
+      ],
+      "rows_in": 60,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "thanh_toan": {
+      "rows": 26246,
+      "columns": [
+        "loai_tt",
+        "ngay_thu",
+        "so_tien",
+        "ma_don",
+        "ma_tt"
+      ],
+      "kinds": {
+        "loai_tt": "text",
+        "ngay_thu": "date",
+        "so_tien": "number",
+        "ma_don": "text",
+        "ma_tt": "text"
+      },
+      "sources": [
+        "thanh_toan.csv[thanh_toan]"
+      ],
+      "rows_in": 26246,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": "ma_don",
+      "filled_merged_key": 0
+    }
+  },
+  "files": [
+    {
+      "file": "chi_tiet_don.csv",
+      "kind": "csv",
+      "sheets": 1,
+      "slices": 1,
+      "multi_schema": false
+    },
+    {
+      "file": "don_hang.csv",
+      "kind": "csv",
+      "sheets": 1,
+      "slices": 1,
+      "multi_schema": false
+    },
+    {
+      "file": "khach_hang.csv",
+      "kind": "csv",
+      "sheets": 1,
+      "slices": 1,
+      "multi_schema": false
+    },
+    {
+      "file": "san_pham.csv",
+      "kind": "csv",
+      "sheets": 1,
+      "slices": 1,
+      "multi_schema": false
+    },
+    {
+      "file": "thanh_toan.csv",
+      "kind": "csv",
+      "sheets": 1,
+      "slices": 1,
+      "multi_schema": false
+    }
+  ],
+  "warnings": [],
+  "rows_in": 97519,
+  "rows_out": 95692,
+  "std": {
+    "line_table": "chi_tiet_don",
+    "header_table": "don_hang",
+    "line.order_id": "ma_bill",
+    "line.revenue": "cong",
+    "line.qty": "soluong",
+    "line.qty_base": "sl_quy_doi",
+    "line.product_id": "ma_h_hoa",
+    "line.product_name": "",
+    "line.unit": "dvt",
+    "line.cost": "",
+    "line.abbrev": "",
+    "line.catalog_fill": "san_pham: ma_vach <-> ten_hang",
+    "line.category": "(danh mục)",
+    "line.status": "",
+    "order.order_id": "so_ct",
+    "order.date": "date",
+    "order.time": "date",
+    "order.status": "xu_ly",
+    "order.customer_id": "ma_the",
+    "order.customer_name": "",
+    "order.pay_method": "phuong_thuc_tt",
+    "order.channel": "kenh_dat",
+    "order.employee_id": "",
+    "products.attrs": "category:60, brand:0, size:0, active_ingredient:0, is_prescription:0, cost_price:0, base_unit:60",
+    "quy_doi.loaded_from_tables": "0"
+  },
+  "std_extra": {
+    "money.amount_due": "don_hang.thanh_tien",
+    "money.paid_total": "don_hang.khach_tra",
+    "money.debt_snapshot": "don_hang.con_no",
+    "money.ship_fee": "don_hang.phi_van_chuyen",
+    "money.order_discount": "don_hang.tien_giam",
+    "payments.table": "thanh_toan",
+    "payments.order_id": "ma_don",
+    "payments.amount": "so_tien",
+    "payments.date": "ngay_thu",
+    "payments.method": "loai_tt",
+    "customers.attrs_table": "khach_hang",
+    "customers.key": "customer_id",
+    "n_order_money": "25191",
+    "n_payments": "26246",
+    "n_purchases": "0",
+    "n_installments": "0",
+    "n_debt_book": "0",
+    "n_tradeins": "0",
+    "n_warranties": "0",
+    "n_customers": "260",
+    "n_stock": "0",
+    "n_lots": "0",
+    "n_deliveries": "0"
+  },
+  "views": [],
+  "readme": {
+    "found": true,
+    "data_end_date": "2026-09-06",
+    "conversions": 21,
+    "text_chars": 1861
+  }
+}

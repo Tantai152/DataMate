@@ -1,0 +1,325 @@
+{
+  "business_dir": "/content/DATASET/public_test/data/dev_004",
+  "db_path": "db_public/dev_004.db",
+  "tables": {
+    "banggia": {
+      "rows": 99,
+      "columns": [
+        "gia_cu",
+        "ngay_ap_dung",
+        "gia_moi",
+        "dien_giai"
+      ],
+      "kinds": {
+        "gia_cu": "number",
+        "ngay_ap_dung": "date",
+        "gia_moi": "number",
+        "dien_giai": "text"
+      },
+      "sources": [
+        "BangGia.xlsx[Sheet1]"
+      ],
+      "rows_in": 99,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "danhmuc": {
+      "rows": 14,
+      "columns": [
+        "hang",
+        "he_so",
+        "dv_goc",
+        "loai_dv"
+      ],
+      "kinds": {
+        "hang": "text",
+        "he_so": "number",
+        "dv_goc": "text",
+        "loai_dv": "text"
+      },
+      "sources": [
+        "DanhMuc.xlsx[Sheet1]"
+      ],
+      "rows_in": 14,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "sobanhang": {
+      "rows": 32869,
+      "columns": [
+        "khach_hang_ten",
+        "gio",
+        "thoi_gian",
+        "ma_don",
+        "sl_ban",
+        "dvt",
+        "hang_ban",
+        "trang_thai_xu_ly",
+        "gia_1_dv",
+        "amount",
+        "tong_phieu"
+      ],
+      "kinds": {
+        "khach_hang_ten": "text",
+        "gio": "date",
+        "thoi_gian": "date",
+        "ma_don": "text",
+        "sl_ban": "number",
+        "dvt": "text",
+        "hang_ban": "text",
+        "trang_thai_xu_ly": "text",
+        "gia_1_dv": "number",
+        "amount": "number",
+        "tong_phieu": "number"
+      },
+      "sources": [
+        "SoBanHang.xlsx[T01-2025]",
+        "SoBanHang.xlsx[T01-2026]",
+        "SoBanHang.xlsx[T02-2025]",
+        "SoBanHang.xlsx[T02-2026]",
+        "SoBanHang.xlsx[T03-2025]",
+        "SoBanHang.xlsx[T03-2026]",
+        "SoBanHang.xlsx[T04-2025]",
+        "SoBanHang.xlsx[T04-2026]",
+        "SoBanHang.xlsx[T05-2025]",
+        "SoBanHang.xlsx[T05-2026]",
+        "SoBanHang.xlsx[T06-2025]",
+        "SoBanHang.xlsx[T06-2026]",
+        "SoBanHang.xlsx[T07-2025]",
+        "SoBanHang.xlsx[T08-2025]",
+        "SoBanHang.xlsx[T09-2025]",
+        "SoBanHang.xlsx[T10-2025]",
+        "SoBanHang.xlsx[T11-2025]",
+        "SoBanHang.xlsx[T12-2025]"
+      ],
+      "rows_in": 33475,
+      "removed_junk": 45,
+      "removed_header_echo": 0,
+      "removed_duplicate": 561,
+      "filled_blanks": 72170,
+      "group_key": "ma_don",
+      "filled_merged_key": 18093
+    },
+    "sogiaohang": {
+      "rows": 28398,
+      "columns": [
+        "so_luong_giao",
+        "bien_so_xe",
+        "luot_giao",
+        "so_don",
+        "thoi_gian_giao",
+        "hang_hoa",
+        "lai_xe",
+        "dv_goc"
+      ],
+      "kinds": {
+        "so_luong_giao": "number",
+        "bien_so_xe": "text",
+        "luot_giao": "number",
+        "so_don": "text",
+        "thoi_gian_giao": "date",
+        "hang_hoa": "text",
+        "lai_xe": "text",
+        "dv_goc": "text"
+      },
+      "sources": [
+        "SoGiaoHang.xlsx[Sheet1]"
+      ],
+      "rows_in": 28398,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "sohanno": {
+      "rows": 2568,
+      "columns": [
+        "ma_don_hang",
+        "ky_han",
+        "ngay_phai_tra"
+      ],
+      "kinds": {
+        "ma_don_hang": "text",
+        "ky_han": "number",
+        "ngay_phai_tra": "date"
+      },
+      "sources": [
+        "SoHanNo.xlsx[Sheet1]"
+      ],
+      "rows_in": 2568,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "sonhaphang": {
+      "rows": 1070,
+      "columns": [
+        "product",
+        "dvt",
+        "so_phieu",
+        "ghi_chu",
+        "nha_cung_cap",
+        "thanh_tien",
+        "gia_nhap",
+        "ngay_nhap",
+        "sl_nhap"
+      ],
+      "kinds": {
+        "product": "text",
+        "dvt": "text",
+        "so_phieu": "text",
+        "ghi_chu": "text",
+        "nha_cung_cap": "text",
+        "thanh_tien": "number",
+        "gia_nhap": "number",
+        "ngay_nhap": "date",
+        "sl_nhap": "number"
+      },
+      "sources": [
+        "SoNhapHang.xlsx[Sheet1]"
+      ],
+      "rows_in": 1070,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": "so_phieu",
+      "filled_merged_key": 0
+    },
+    "tonkho": {
+      "rows": 60,
+      "columns": [
+        "ton_cuoi",
+        "dv_goc",
+        "ten_san_pham"
+      ],
+      "kinds": {
+        "ton_cuoi": "number",
+        "dv_goc": "text",
+        "ten_san_pham": "text"
+      },
+      "sources": [
+        "TonKho.xlsx[Sheet1]"
+      ],
+      "rows_in": 60,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    }
+  },
+  "files": [
+    {
+      "file": "BangGia.xlsx",
+      "kind": "xlsx",
+      "sheets": 1,
+      "slices": 1,
+      "multi_schema": false
+    },
+    {
+      "file": "DanhMuc.xlsx",
+      "kind": "xlsx",
+      "sheets": 1,
+      "slices": 1,
+      "multi_schema": false
+    },
+    {
+      "file": "SoBanHang.xlsx",
+      "kind": "xlsx",
+      "sheets": 18,
+      "slices": 18,
+      "multi_schema": false
+    },
+    {
+      "file": "SoGiaoHang.xlsx",
+      "kind": "xlsx",
+      "sheets": 1,
+      "slices": 1,
+      "multi_schema": false
+    },
+    {
+      "file": "SoHanNo.xlsx",
+      "kind": "xlsx",
+      "sheets": 1,
+      "slices": 1,
+      "multi_schema": false
+    },
+    {
+      "file": "SoNhapHang.xlsx",
+      "kind": "xlsx",
+      "sheets": 1,
+      "slices": 1,
+      "multi_schema": false
+    },
+    {
+      "file": "TonKho.xlsx",
+      "kind": "xlsx",
+      "sheets": 1,
+      "slices": 1,
+      "multi_schema": false
+    }
+  ],
+  "warnings": [],
+  "rows_in": 65684,
+  "rows_out": 65078,
+  "std": {
+    "line_table": "sobanhang",
+    "header_table": "",
+    "line.order_id": "ma_don",
+    "line.revenue": "amount",
+    "line.qty": "sl_ban",
+    "line.qty_base": "",
+    "line.product_id": "",
+    "line.product_name": "hang_ban",
+    "line.unit": "dvt",
+    "line.cost": "",
+    "line.abbrev": "",
+    "line.catalog_fill": "",
+    "line.category": "(danh mục)",
+    "line.status": "trang_thai_xu_ly",
+    "order.customer_id": "",
+    "order.customer_name": "khach_hang_ten",
+    "order.pay_method": "",
+    "order.channel": "",
+    "order.employee_id": "",
+    "products.attrs": "category:0, brand:0, size:0, active_ingredient:0, is_prescription:0, cost_price:0, base_unit:60",
+    "quy_doi.loaded_from_tables": "0"
+  },
+  "std_extra": {
+    "customers.key": "tên+SĐT",
+    "stock.tonkho": "ton_cuoi",
+    "n_order_money": "0",
+    "n_payments": "0",
+    "n_purchases": "1070",
+    "n_installments": "0",
+    "n_debt_book": "0",
+    "n_tradeins": "0",
+    "n_warranties": "0",
+    "n_customers": "190",
+    "n_stock": "60",
+    "n_lots": "0",
+    "n_deliveries": "28398"
+  },
+  "views": [],
+  "readme": {
+    "found": true,
+    "data_end_date": "2026-06-10",
+    "conversions": 3,
+    "text_chars": 3205
+  }
+}

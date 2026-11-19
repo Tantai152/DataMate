@@ -1,0 +1,652 @@
+{
+  "business_dir": "/content/DATASET/public_test/data/dev_006",
+  "db_path": "db_public/dev_006.db",
+  "tables": {
+    "chi_nhanh": {
+      "rows": 1,
+      "columns": [
+        "idcuahang",
+        "machinhanh",
+        "tengoi",
+        "diachilienhe",
+        "ngaykhaitruong"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "machinhanh": "text",
+        "tengoi": "text",
+        "diachilienhe": "text",
+        "ngaykhaitruong": "date"
+      },
+      "sources": [
+        "pos.sqlite[chi_nhanh]"
+      ],
+      "rows_in": 1,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "nhan_vien": {
+      "rows": 3,
+      "columns": [
+        "idcuahang",
+        "manhanvien",
+        "tengoi",
+        "machinhanh",
+        "chucvu",
+        "ngaynhanviec"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "manhanvien": "text",
+        "tengoi": "text",
+        "machinhanh": "text",
+        "chucvu": "text",
+        "ngaynhanviec": "date"
+      },
+      "sources": [
+        "pos.sqlite[nhan_vien]"
+      ],
+      "rows_in": 3,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "khach_hang": {
+      "rows": 320,
+      "columns": [
+        "idcuahang",
+        "makhachhang",
+        "tengoi",
+        "trang_thai_kh",
+        "tong_diem",
+        "diem_hien_tai",
+        "loai_hinh_kh",
+        "sodienthoai",
+        "loaikhachhang",
+        "taoluc",
+        "ma_so_thue",
+        "diachilienhe",
+        "nguoi_tao"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "makhachhang": "text",
+        "tengoi": "text",
+        "trang_thai_kh": "text",
+        "tong_diem": "number",
+        "diem_hien_tai": "number",
+        "loai_hinh_kh": "text",
+        "sodienthoai": "text",
+        "loaikhachhang": "text",
+        "taoluc": "date",
+        "ma_so_thue": "text",
+        "diachilienhe": "text",
+        "nguoi_tao": "text"
+      },
+      "sources": [
+        "pos.sqlite[khach_hang]"
+      ],
+      "rows_in": 320,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "nha_cung_cap": {
+      "rows": 5,
+      "columns": [
+        "idcuahang",
+        "manhacungcap",
+        "nguoi_tao",
+        "trang_thai_ncc",
+        "tengoi",
+        "sodienthoai",
+        "diachilienhe"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "manhacungcap": "text",
+        "nguoi_tao": "text",
+        "trang_thai_ncc": "text",
+        "tengoi": "text",
+        "sodienthoai": "text",
+        "diachilienhe": "text"
+      },
+      "sources": [
+        "pos.sqlite[nha_cung_cap]"
+      ],
+      "rows_in": 5,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "san_pham": {
+      "rows": 80,
+      "columns": [
+        "idcuahang",
+        "mahanghoa",
+        "ban_truc_tiep",
+        "ton_nho_nhat",
+        "tengoi",
+        "ma_vach_ean",
+        "danhmuc",
+        "donvicoso",
+        "giabanle",
+        "giavonhang",
+        "ton_lon_nhat",
+        "tylethue",
+        "loai_hang_hoa",
+        "conkinhdoanh",
+        "taoluc"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "mahanghoa": "text",
+        "ban_truc_tiep": "number",
+        "ton_nho_nhat": "number",
+        "tengoi": "text",
+        "ma_vach_ean": "text",
+        "danhmuc": "text",
+        "donvicoso": "text",
+        "giabanle": "number",
+        "giavonhang": "number",
+        "ton_lon_nhat": "number",
+        "tylethue": "number",
+        "loai_hang_hoa": "text",
+        "conkinhdoanh": "number",
+        "taoluc": "date"
+      },
+      "sources": [
+        "pos.sqlite[san_pham]"
+      ],
+      "rows_in": 80,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "don_vi_sp": {
+      "rows": 83,
+      "columns": [
+        "idcuahang",
+        "mahanghoa",
+        "donvitinh",
+        "hesoquydoi",
+        "giadonvi"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "mahanghoa": "text",
+        "donvitinh": "text",
+        "hesoquydoi": "number",
+        "giadonvi": "number"
+      },
+      "sources": [
+        "pos.sqlite[don_vi_sp]"
+      ],
+      "rows_in": 83,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "phieu_nhap": {
+      "rows": 494,
+      "columns": [
+        "idcuahang",
+        "maphieunhap",
+        "manhacungcap",
+        "machinhanh",
+        "ngaynhapkho",
+        "tinhtrang",
+        "tonggiatrinhap",
+        "diengiai"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "maphieunhap": "text",
+        "manhacungcap": "text",
+        "machinhanh": "text",
+        "ngaynhapkho": "date",
+        "tinhtrang": "text",
+        "tonggiatrinhap": "number",
+        "diengiai": "text"
+      },
+      "sources": [
+        "pos.sqlite[phieu_nhap]"
+      ],
+      "rows_in": 494,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "chi_tiet_nhap": {
+      "rows": 3234,
+      "columns": [
+        "idcuahang",
+        "maphieunhap",
+        "sothutu",
+        "mahanghoa",
+        "donvitinh",
+        "sl",
+        "dongianhap",
+        "malo",
+        "hansudung"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "maphieunhap": "text",
+        "sothutu": "number",
+        "mahanghoa": "text",
+        "donvitinh": "text",
+        "sl": "number",
+        "dongianhap": "number",
+        "malo": "text",
+        "hansudung": "date"
+      },
+      "sources": [
+        "pos.sqlite[chi_tiet_nhap]"
+      ],
+      "rows_in": 3234,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": "maphieunhap",
+      "filled_merged_key": 0
+    },
+    "don_hang": {
+      "rows": 37833,
+      "columns": [
+        "idcuahang",
+        "mahoadon",
+        "machinhanh",
+        "makhachhang",
+        "manhanvien",
+        "macalam",
+        "kenhbanhang",
+        "thoigianlap",
+        "ngaylap",
+        "tinhtrang",
+        "tongtienhang",
+        "chietkhau",
+        "phivanchuyen",
+        "thuegtgt",
+        "tongthanhtoan",
+        "khachdatra",
+        "conphaithu",
+        "phuongthuctt",
+        "makhuyenmai"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "mahoadon": "text",
+        "machinhanh": "text",
+        "makhachhang": "text",
+        "manhanvien": "text",
+        "macalam": "text",
+        "kenhbanhang": "text",
+        "thoigianlap": "date",
+        "ngaylap": "date",
+        "tinhtrang": "text",
+        "tongtienhang": "number",
+        "chietkhau": "number",
+        "phivanchuyen": "number",
+        "thuegtgt": "number",
+        "tongthanhtoan": "number",
+        "khachdatra": "number",
+        "conphaithu": "number",
+        "phuongthuctt": "text",
+        "makhuyenmai": "text"
+      },
+      "sources": [
+        "pos.sqlite[don_hang]"
+      ],
+      "rows_in": 37833,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "chi_tiet_don": {
+      "rows": 71061,
+      "columns": [
+        "idcuahang",
+        "mahoadon",
+        "sothutu",
+        "mahanghoa",
+        "donvitinh",
+        "sl",
+        "slquydoi",
+        "giadonvi",
+        "chietkhau",
+        "trigia",
+        "giavonlucban"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "mahoadon": "text",
+        "sothutu": "number",
+        "mahanghoa": "text",
+        "donvitinh": "text",
+        "sl": "number",
+        "slquydoi": "number",
+        "giadonvi": "number",
+        "chietkhau": "number",
+        "trigia": "number",
+        "giavonlucban": "number"
+      },
+      "sources": [
+        "pos.sqlite[chi_tiet_don]"
+      ],
+      "rows_in": 72411,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 1350,
+      "filled_blanks": 0,
+      "group_key": "mahoadon",
+      "filled_merged_key": 0
+    },
+    "thanh_toan": {
+      "rows": 37939,
+      "columns": [
+        "idcuahang",
+        "maphieuthu",
+        "mahoadon",
+        "ngaygiothu",
+        "sotienthu",
+        "phuongthuc"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "maphieuthu": "text",
+        "mahoadon": "text",
+        "ngaygiothu": "date",
+        "sotienthu": "number",
+        "phuongthuc": "text"
+      },
+      "sources": [
+        "pos.sqlite[thanh_toan]"
+      ],
+      "rows_in": 37939,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "tra_hang": {
+      "rows": 352,
+      "columns": [
+        "idcuahang",
+        "maphieutra",
+        "mahoadon",
+        "ngaygiotra",
+        "nguyennhan",
+        "tienhoantra",
+        "cachhoantien"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "maphieutra": "text",
+        "mahoadon": "text",
+        "ngaygiotra": "date",
+        "nguyennhan": "text",
+        "tienhoantra": "number",
+        "cachhoantien": "text"
+      },
+      "sources": [
+        "pos.sqlite[tra_hang]"
+      ],
+      "rows_in": 352,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "the_kho": {
+      "rows": 73901,
+      "columns": [
+        "idcuahang",
+        "magiaodichkho",
+        "mahanghoa",
+        "machinhanh",
+        "ngaygiophatsinh",
+        "loaigiaodich",
+        "slquydoi",
+        "kieuchungtu",
+        "machungtu",
+        "toncuoi"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "magiaodichkho": "text",
+        "mahanghoa": "text",
+        "machinhanh": "text",
+        "ngaygiophatsinh": "date",
+        "loaigiaodich": "text",
+        "slquydoi": "number",
+        "kieuchungtu": "text",
+        "machungtu": "text",
+        "toncuoi": "number"
+      },
+      "sources": [
+        "pos.sqlite[the_kho]"
+      ],
+      "rows_in": 73901,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": "machungtu",
+      "filled_merged_key": 0
+    },
+    "lich_su_gia": {
+      "rows": 120,
+      "columns": [
+        "idcuahang",
+        "mahanghoa",
+        "ngayapdung",
+        "giabanle"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "mahanghoa": "text",
+        "ngayapdung": "date",
+        "giabanle": "number"
+      },
+      "sources": [
+        "pos.sqlite[lich_su_gia]"
+      ],
+      "rows_in": 120,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "lo_hang": {
+      "rows": 3234,
+      "columns": [
+        "idcuahang",
+        "mahanghoa",
+        "malo",
+        "maphieunhap",
+        "hansudung",
+        "slnhapquydoi",
+        "dongianhap"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "mahanghoa": "text",
+        "malo": "text",
+        "maphieunhap": "text",
+        "hansudung": "date",
+        "slnhapquydoi": "number",
+        "dongianhap": "number"
+      },
+      "sources": [
+        "pos.sqlite[lo_hang]"
+      ],
+      "rows_in": 3234,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": "maphieunhap",
+      "filled_merged_key": 0
+    },
+    "chi_tiet_don_lo": {
+      "rows": 72710,
+      "columns": [
+        "idcuahang",
+        "mahoadon",
+        "sothutu",
+        "malo",
+        "slquydoi",
+        "sltraquydoi"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "mahoadon": "text",
+        "sothutu": "number",
+        "malo": "text",
+        "slquydoi": "number",
+        "sltraquydoi": "number"
+      },
+      "sources": [
+        "pos.sqlite[chi_tiet_don_lo]"
+      ],
+      "rows_in": 72710,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": "mahoadon",
+      "filled_merged_key": 0
+    },
+    "thong_tin_thuoc": {
+      "rows": 80,
+      "columns": [
+        "idcuahang",
+        "mahanghoa",
+        "thanhphanchinh",
+        "bantheodon"
+      ],
+      "kinds": {
+        "idcuahang": "text",
+        "mahanghoa": "text",
+        "thanhphanchinh": "text",
+        "bantheodon": "number"
+      },
+      "sources": [
+        "pos.sqlite[thong_tin_thuoc]"
+      ],
+      "rows_in": 80,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    }
+  },
+  "files": [
+    {
+      "file": "pos.sqlite",
+      "kind": "sqlite",
+      "sheets": 17,
+      "slices": 17,
+      "multi_schema": true
+    }
+  ],
+  "warnings": [],
+  "rows_in": 302800,
+  "rows_out": 301450,
+  "std": {
+    "line_table": "chi_tiet_don",
+    "header_table": "don_hang",
+    "line.order_id": "mahoadon",
+    "line.revenue": "trigia",
+    "line.qty": "sl",
+    "line.qty_base": "slquydoi",
+    "line.product_id": "mahanghoa",
+    "line.product_name": "",
+    "line.unit": "donvitinh",
+    "line.cost": "giavonlucban",
+    "line.abbrev": "",
+    "line.catalog_fill": "san_pham: mahanghoa <-> tengoi",
+    "line.category": "(danh mục)",
+    "line.status": "",
+    "order.order_id": "mahoadon",
+    "order.date": "thoigianlap",
+    "order.time": "thoigianlap",
+    "order.status": "tinhtrang",
+    "order.customer_id": "makhachhang",
+    "order.customer_name": "",
+    "order.pay_method": "phuongthuctt",
+    "order.channel": "kenhbanhang",
+    "order.employee_id": "manhanvien",
+    "products.attrs": "category:80, brand:0, size:0, active_ingredient:63, is_prescription:80, cost_price:80, base_unit:80",
+    "quy_doi.loaded_from_tables": "71144"
+  },
+  "std_extra": {
+    "money.amount_due": "don_hang.tongthanhtoan",
+    "money.paid_total": "don_hang.khachdatra",
+    "money.ship_fee": "don_hang.phivanchuyen",
+    "money.order_discount": "don_hang.chietkhau",
+    "payments.table": "thanh_toan",
+    "payments.order_id": "mahoadon",
+    "payments.amount": "sotienthu",
+    "payments.date": "ngaygiothu",
+    "payments.method": "phuongthuc",
+    "customers.attrs_table": "khach_hang",
+    "customers.key": "customer_id",
+    "stock.ledger": "the_kho.toncuoi",
+    "lots.table": "lo_hang",
+    "lot_sales.table": "chi_tiet_don_lo",
+    "n_order_money": "37833",
+    "n_payments": "37939",
+    "n_purchases": "3234",
+    "n_installments": "0",
+    "n_debt_book": "0",
+    "n_tradeins": "0",
+    "n_warranties": "0",
+    "n_customers": "320",
+    "n_stock": "0",
+    "n_lots": "3234",
+    "n_deliveries": "0"
+  },
+  "views": [],
+  "readme": {
+    "found": true,
+    "data_end_date": "2026-08-08",
+    "conversions": 0,
+    "text_chars": 1977
+  }
+}

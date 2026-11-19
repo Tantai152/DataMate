@@ -1,0 +1,123 @@
+{
+  "business_dir": "/content/DATASET/public_test/data/dev_012",
+  "db_path": "db_public/dev_012.db",
+  "tables": {
+    "danhsachtho": {
+      "rows": 4,
+      "columns": [
+        "ho_ten",
+        "ngay_vao_lam",
+        "hoa_hong"
+      ],
+      "kinds": {
+        "ho_ten": "text",
+        "ngay_vao_lam": "date",
+        "hoa_hong": "number"
+      },
+      "sources": [
+        "DanhSachTho.xlsx[Sheet1]"
+      ],
+      "rows_in": 4,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "sosuaxe": {
+      "rows": 6060,
+      "columns": [
+        "ngay",
+        "xe",
+        "lam_gi",
+        "tho",
+        "tien",
+        "ghi_chu"
+      ],
+      "kinds": {
+        "ngay": "date",
+        "xe": "text",
+        "lam_gi": "text",
+        "tho": "text",
+        "tien": "number",
+        "ghi_chu": "text"
+      },
+      "sources": [
+        "SoSuaXe.xlsx[T1-2026]",
+        "SoSuaXe.xlsx[T10-2025]",
+        "SoSuaXe.xlsx[T11-2025]",
+        "SoSuaXe.xlsx[T12-2025]",
+        "SoSuaXe.xlsx[T2-2026]",
+        "SoSuaXe.xlsx[T3-2026]",
+        "SoSuaXe.xlsx[T4-2026]",
+        "SoSuaXe.xlsx[T5-2026]",
+        "SoSuaXe.xlsx[T6-2026]",
+        "SoSuaXe.xlsx[T7-2025]",
+        "SoSuaXe.xlsx[T7-2026]",
+        "SoSuaXe.xlsx[T8-2025]",
+        "SoSuaXe.xlsx[T8-2026]",
+        "SoSuaXe.xlsx[T9-2025]"
+      ],
+      "rows_in": 6078,
+      "removed_junk": 18,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    }
+  },
+  "files": [
+    {
+      "file": "DanhSachTho.xlsx",
+      "kind": "xlsx",
+      "sheets": 1,
+      "slices": 1,
+      "multi_schema": false
+    },
+    {
+      "file": "SoSuaXe.xlsx",
+      "kind": "xlsx",
+      "sheets": 14,
+      "slices": 14,
+      "multi_schema": false
+    }
+  ],
+  "warnings": [],
+  "rows_in": 6082,
+  "rows_out": 6064,
+  "std": {
+    "line_table": "",
+    "header_table": "",
+    "repair.table": "sosuaxe",
+    "repair.plate": "xe",
+    "repair.date": "ngay",
+    "repair.jobs": "lam_gi",
+    "repair.mechanic": "tho",
+    "repair.amount": "tien",
+    "repair.staff_table": "danhsachtho",
+    "warning.0": "164/6060 đơn hợp lệ có revenue <= 0"
+  },
+  "std_extra": {
+    "customers.key": "customer_id",
+    "n_order_money": "0",
+    "n_payments": "0",
+    "n_purchases": "0",
+    "n_installments": "0",
+    "n_debt_book": "0",
+    "n_tradeins": "0",
+    "n_warranties": "0",
+    "n_customers": "3054",
+    "n_stock": "0",
+    "n_lots": "0",
+    "n_deliveries": "0"
+  },
+  "views": [],
+  "readme": {
+    "found": true,
+    "data_end_date": "2026-08-31",
+    "conversions": 0,
+    "text_chars": 976
+  }
+}

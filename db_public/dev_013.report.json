@@ -1,0 +1,245 @@
+{
+  "business_dir": "/content/DATASET/public_test/data/dev_013",
+  "db_path": "db_public/dev_013.db",
+  "tables": {
+    "banhang": {
+      "rows": 32174,
+      "columns": [
+        "dg",
+        "tt",
+        "sl",
+        "dvt",
+        "ten_hang",
+        "hd",
+        "ngay",
+        "khach",
+        "kenh",
+        "ghi_chu"
+      ],
+      "kinds": {
+        "dg": "number",
+        "tt": "number",
+        "sl": "number",
+        "dvt": "text",
+        "ten_hang": "text",
+        "hd": "text",
+        "ngay": "date",
+        "khach": "text",
+        "kenh": "text",
+        "ghi_chu": "text"
+      },
+      "sources": [
+        "BanHang_2025.xlsx[T05-2025]",
+        "BanHang_2025.xlsx[T06-2025]",
+        "BanHang_2025.xlsx[T07-2025]",
+        "BanHang_2025.xlsx[T08-2025]",
+        "BanHang_2025.xlsx[T09-2025]",
+        "BanHang_2025.xlsx[T10-2025]",
+        "BanHang_2025.xlsx[T11-2025]",
+        "BanHang_2025.xlsx[T12-2025]",
+        "BanHang_2026.xlsx[T01-2026]",
+        "BanHang_2026.xlsx[T02-2026]",
+        "BanHang_2026.xlsx[T03-2026]",
+        "BanHang_2026.xlsx[T04-2026]",
+        "BanHang_2026.xlsx[T05-2026]",
+        "BanHang_2026.xlsx[T06-2026]"
+      ],
+      "rows_in": 32174,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "danhmuc": {
+      "rows": 77,
+      "columns": [
+        "ten_hang",
+        "ten_goi_khac",
+        "nhom",
+        "hang",
+        "so_size",
+        "dvt",
+        "quy_doi"
+      ],
+      "kinds": {
+        "ten_hang": "text",
+        "ten_goi_khac": "text",
+        "nhom": "text",
+        "hang": "text",
+        "so_size": "text",
+        "dvt": "text",
+        "quy_doi": "text"
+      },
+      "sources": [
+        "QuanLy.xlsx[DanhMuc]"
+      ],
+      "rows_in": 77,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "khachhang": {
+      "rows": 420,
+      "columns": [
+        "ten_kh",
+        "sdt",
+        "ten_be",
+        "ngay_dang_ky",
+        "diem_hien_co"
+      ],
+      "kinds": {
+        "ten_kh": "text",
+        "sdt": "text",
+        "ten_be": "text",
+        "ngay_dang_ky": "date",
+        "diem_hien_co": "number"
+      },
+      "sources": [
+        "QuanLy.xlsx[KhachHang]"
+      ],
+      "rows_in": 420,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    },
+    "quanly": {
+      "rows": 1503,
+      "columns": [
+        "ngay",
+        "so_phieu",
+        "nha_cung_cap",
+        "hang",
+        "sl",
+        "dvt",
+        "don_gia",
+        "thanh_tien",
+        "ghi_chu"
+      ],
+      "kinds": {
+        "ngay": "date",
+        "so_phieu": "text",
+        "nha_cung_cap": "text",
+        "hang": "text",
+        "sl": "number",
+        "dvt": "text",
+        "don_gia": "number",
+        "thanh_tien": "number",
+        "ghi_chu": "text"
+      },
+      "sources": [
+        "QuanLy.xlsx[NhapHang]"
+      ],
+      "rows_in": 1503,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": "so_phieu",
+      "filled_merged_key": 0
+    },
+    "khuyenmai": {
+      "rows": 10,
+      "columns": [
+        "chuong_trinh",
+        "hang_ap_dung",
+        "tu_ngay",
+        "den_ngay"
+      ],
+      "kinds": {
+        "chuong_trinh": "text",
+        "hang_ap_dung": "text",
+        "tu_ngay": "date",
+        "den_ngay": "date"
+      },
+      "sources": [
+        "QuanLy.xlsx[KhuyenMai]"
+      ],
+      "rows_in": 10,
+      "removed_junk": 0,
+      "removed_header_echo": 0,
+      "removed_duplicate": 0,
+      "filled_blanks": 0,
+      "group_key": null,
+      "filled_merged_key": 0
+    }
+  },
+  "files": [
+    {
+      "file": "BanHang_2025.xlsx",
+      "kind": "xlsx",
+      "sheets": 8,
+      "slices": 8,
+      "multi_schema": false
+    },
+    {
+      "file": "BanHang_2026.xlsx",
+      "kind": "xlsx",
+      "sheets": 6,
+      "slices": 6,
+      "multi_schema": false
+    },
+    {
+      "file": "QuanLy.xlsx",
+      "kind": "xlsx",
+      "sheets": 4,
+      "slices": 4,
+      "multi_schema": true
+    }
+  ],
+  "warnings": [],
+  "rows_in": 34184,
+  "rows_out": 34184,
+  "std": {
+    "line_table": "banhang",
+    "header_table": "",
+    "line.order_id": "hd",
+    "line.revenue": "tt",
+    "line.qty": "sl",
+    "line.qty_base": "",
+    "line.product_id": "",
+    "line.product_name": "ten_hang",
+    "line.unit": "dvt",
+    "line.cost": "",
+    "line.abbrev": "",
+    "line.catalog_fill": "",
+    "line.category": "(danh mục)",
+    "line.status": "ghi_chu",
+    "order.customer_id": "",
+    "order.customer_name": "khach",
+    "order.pay_method": "",
+    "order.channel": "kenh",
+    "order.employee_id": "",
+    "products.attrs": "category:77, brand:66, size:33, active_ingredient:0, is_prescription:0, cost_price:0, base_unit:77",
+    "quy_doi.loaded_from_tables": "30"
+  },
+  "std_extra": {
+    "customers.attrs_table": "khachhang",
+    "customers.key": "tên+SĐT",
+    "n_order_money": "0",
+    "n_payments": "0",
+    "n_purchases": "1503",
+    "n_installments": "0",
+    "n_debt_book": "0",
+    "n_tradeins": "0",
+    "n_warranties": "0",
+    "n_customers": "420",
+    "n_stock": "0",
+    "n_lots": "0",
+    "n_deliveries": "0"
+  },
+  "views": [],
+  "readme": {
+    "found": true,
+    "data_end_date": "2026-06-30",
+    "conversions": 0,
+    "text_chars": 3921
+  }
+}
